@@ -16,7 +16,8 @@ export const mockQuestions: Question[] = [
     category: 'macro',
     role: 'adc',
     gamePhase: 'mid',
-    createdAt: new Date().toISOString()
+    createdAt: new Date().toISOString(),
+    imageUrl: "https://example.com/images/baron-situation.jpg"
   },
   {
     id: '2',
@@ -32,7 +33,8 @@ export const mockQuestions: Question[] = [
     category: 'draft',
     role: 'jungle',
     gamePhase: 'général',
-    createdAt: new Date().toISOString()
+    createdAt: new Date().toISOString(),
+    videoUrl: "https://example.com/videos/jarvan-synergy.mp4"
   },
   {
     id: '3',

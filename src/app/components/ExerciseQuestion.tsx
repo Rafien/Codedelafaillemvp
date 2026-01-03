@@ -63,7 +63,19 @@ export function ExerciseQuestion({ question, onSubmit, onBack }: ExerciseQuestio
               {getPhaseEmoji(question.gamePhase)} {question.gamePhase}
             </Badge>
           </div>
-          
+
+          {/* Affichage image ou vidéo si présent */}
+          {question.imageUrl && (
+            <div className="my-4 flex justify-center">
+              <img src={question.imageUrl} alt="Illustration" className="max-h-64 rounded shadow" />
+            </div>
+          )}
+          {question.videoUrl && (
+            <div className="my-4 flex justify-center">
+              <video src={question.videoUrl} controls className="max-h-64 rounded shadow" />
+            </div>
+          )}
+
           <div className="space-y-2">
             <CardDescription>Contexte</CardDescription>
             <CardTitle className="text-lg leading-relaxed">

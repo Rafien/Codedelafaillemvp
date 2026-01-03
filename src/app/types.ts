@@ -20,6 +20,8 @@ export interface Question {
   role: Role;
   gamePhase: GamePhase;
   createdAt: string;
+  imageUrl?: string; // URL d'une image illustrative
+  videoUrl?: string; // URL d'une vidéo illustrative
 }
 
 export interface UserAnswer {
